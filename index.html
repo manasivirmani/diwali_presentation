@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diwali — Festival of Lights</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#211035;color:#fff5e1;font-family:system-ui,Arial,sans-serif;overflow:hidden}
+.slide{display:none;height:100dvh;overflow:auto;padding:5vw 7vw 85px;background:radial-gradient(ellipse at 75% 25%,#70356e,#29113f 75%)}
+.slide.active{display:flex;flex-direction:column;justify-content:center}
+h1,h2{font-family:Georgia,serif;color:#ffda80;margin:0 0 24px;line-height:1.12}
+h1{font-size:clamp(42px,6vw,86px)}
+h2{font-size:clamp(34px,5vw,68px)}
+p,li{font-size:clamp(19px,2.3vw,31px);line-height:1.45}
+li{margin:12px 0}
+.content{display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:center}
+.question{background:#fff0c9;color:#4d2050;padding:18px 25px;border-radius:20px;font-weight:800;font-size:clamp(18px,2.3vw,29px);margin-top:24px;text-align:center}
+.gold{color:#ffdb85}
+.card{background:#ffffff14;border:2px solid #e7b95f;border-radius:24px;padding:25px}
+.art{text-align:center;font-size:clamp(85px,15vw,210px)}
+footer{position:fixed;bottom:0;left:0;right:0;padding:13px 22px;background:#1d0e30e8;display:flex;align-items:center;justify-content:space-between;gap:12px}
+button{background:#ffdb85;border:0;border-radius:12px;padding:11px 17px;color:#351747;font-weight:800;cursor:pointer}
+button:disabled{opacity:.3}
+nav{display:flex;gap:8px}
+.flow{stroke:#5ce6e4;stroke-width:7;stroke-dasharray:9 16;animation:rise 1.4s linear infinite}
+@keyframes rise{to{stroke-dashoffset:-50}}
+.flame{transform-origin:200px 100px;animation:flicker 1s ease-in-out infinite alternate}
+@keyframes flicker{to{transform:scale(.92,1.09)}}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.three .card{text-align:center}
+.three .emoji{font-size:clamp(55px,8vw,105px)}
+.lights{font-size:clamp(30px,5vw,70px);color:#ffdf80;text-align:center;text-shadow:0 0 20px #ffba4a}
+@media(max-width:700px){
+.slide{padding:24px 22px 85px}
+.content{grid-template-columns:1fr;gap:8px}
+.art{font-size:95px}
+.three{gap:6px}
+.three .card{padding:8px}
+.three p{font-size:14px}
+.three .emoji{font-size:45px}
+}
+</style>
+</head>
+<body>
+
+<section class="slide active">
+<h1>Diwali: The Festival of Lights 🪔</h1>
+<div class="content">
+<div class="art">🪔🌼✨</div>
+<div>
+<p>🌎 Celebrated by millions of people around the world.</p>
+<p>✨ A festival of joy, hope, and new beginnings.</p>
+<p>🎁 Family, friends, good food, sweets, and sometimes gifts!</p>
+<p>🌸 Homes decorated with rangoli, flowers, and lots of lights.</p>
+</div>
+</div>
+<div class="question">What other celebrations have similar traditions?</div>
+</section>
+
+<section class="slide">
+<h2>Why Are Lights Important?</h2>
+<div class="content">
+<div>
+<p>Light symbolizes <b class="gold">hope, knowledge, and goodness overcoming darkness.</b></p>
+<p>Today, many people decorate their homes with colorful <b>string lights</b>.</p>
+<p>A traditional way to celebrate is with <b>diyas</b> — small lamps filled with oil or ghee and a cotton wick.</p>
+</div>
+<div>
+<div class="card">
+<div class="lights">✦ 💡 ✦ 💡 ✦</div>
+<p style="text-align:center">String lights</p>
+</div>
+<div class="card" style="margin-top:15px;text-align:center">
+<div class="art">🪔</div>
+<p>Traditional diyas</p>
+</div>
+</div>
+</div>
+<div class="question">How does the oil reach the flame?</div>
+</section>
+
+<section class="slide">
+<h2>How Does a Diya Work?</h2>
+<div class="content">
+<div>
+<p><b class="gold">Capillary action</b> is when liquid moves through tiny spaces because of forces of attraction.</p>
+<ol>
+<li>Oil soaks into the cotton wick.</li>
+<li>Oil moves upward through tiny spaces.</li>
+<li>Near the flame, the fuel vaporizes and burns.</li>
+</ol>
+</div>
+<div>
+<svg viewBox="0 0 400 420" width="100%" role="img" aria-label="Animated diya showing oil rising through a wick">
+<defs>
+<linearGradient id="clay" x2="0" y2="1">
+<stop stop-color="#f6b96c"/>
+<stop offset="1" stop-color="#a94e35"/>
+</linearGradient>
+</defs>
+<path d="M75 245 Q200 290 325 245 L290 350 Q200 390 110 350Z" fill="url(#clay)" stroke="#ffd68c" stroke-width="6"/>
+<ellipse cx="200" cy="245" rx="125" ry="34" fill="#dc9b3a" stroke="#ffd68c" stroke-width="6"/>
+<path d="M200 250 Q195 180 200 105" stroke="#f7e1b4" stroke-width="19" fill="none" stroke-linecap="round"/>
+<path class="flow" d="M200 250 Q195 180 200 105" fill="none"/>
+<g class="flame">
+<path d="M200 115 Q145 75 202 5 Q260 75 200 115Z" fill="#ffab2e"/>
+<path d="M200 110 Q180 85 201 50 Q224 86 200 110Z" fill="#fff2a2"/>
+</g>
+<text x="235" y="175" font-size="20" fill="#72eeee" font-weight="bold">Oil rises ↑</text>
+<text x="200" y="408" text-anchor="middle" font-size="21" fill="#fff0d0">Oil + cotton wick</text>
+</svg>
+</div>
+</div>
+<div class="question">Can liquid move upward without a pump?</div>
+</section>
+
+<section class="slide">
+<h2>Where Else Do We See Capillary Action?</h2>
+<div class="three">
+<div class="card">
+<div class="emoji">🕯️</div>
+<h3>Candles</h3>
+<p>Melted wax travels up the wick.</p>
+</div>
+<div class="card">
+<div class="emoji">🧻</div>
+<h3>Paper towels</h3>
+<p>Water spreads through tiny spaces.</p>
+</div>
+<div class="card">
+<div class="emoji">🌱</div>
+<h3>Plants</h3>
+<p>Capillary action helps water move through tiny tubes, along with other forces.</p>
+</div>
+</div>
+<div class="question">Which example have you seen before?</div>
+</section>
+
+<section class="slide">
+<h2 style="text-align:center">Your Diwali Activity:<br>Light Up a Diya!</h2>
+<div class="content">
+<div class="card" style="text-align:center;background:#fff0d6;color:#49204a">
+<h3>Your Materials</h3>
+<div style="font-size:clamp(55px,8vw,105px)">🪔 💡 🪙</div>
+<p>Diya · LED · Battery</p>
+<p>Two adhesive stickers</p>
+</div>
+<div style="text-align:center">
+<div class="art">✨ 🪔 ✨</div>
+<p class="gold">Make your diya glow!</p>
+</div>
+</div>
+<div class="question">Can you make your diya glow using a battery instead of a flame?</div>
+</section>
+
+<footer>
+<span id="counter">1 / 5</span>
+<nav>
+<button id="prev" onclick="move(-1)">← Back</button>
+<button id="next" onclick="move(1)">Next →</button>
+<button onclick="toggleFull()">⛶ Fullscreen</button>
+</nav>
+</footer>
+
+<script>
+const slides=[...document.querySelectorAll(".slide")];
+let current=0;
+function show(n){
+ current=Math.max(0,Math.min(n,slides.length-1));
+ slides.forEach((s,i)=>s.classList.toggle("active",i===current));
+ document.getElementById("counter").textContent=(current+1)+" / "+slides.length;
+ document.getElementById("prev").disabled=current===0;
+ document.getElementById("next").disabled=current===slides.length-1;
+}
+function move(n){show(current+n)}
+function toggleFull(){
+ if(document.fullscreenElement)document.exitFullscreen();
+ else document.documentElement.requestFullscreen();
+}
+document.addEventListener("keydown",e=>{
+ if(["ArrowRight"," ","PageDown"].includes(e.key)){e.preventDefault();move(1)}
+ if(["ArrowLeft","PageUp"].includes(e.key)){e.preventDefault();move(-1)}
+});
+show(0);
+</script>
+</body>
+</html>
